@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+  background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos para el formulario de registro */
+#registro-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#registro-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#registro-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#registro-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#registro-form button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para la sección "Ver los datos registrados" */
+#datos-registrados {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+}
+
+#datos-registrados h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#datos-registrados .label {
+    font-weight: bold;
+}
+
+#datos-registrados p {
+    margin: 5px 0;
+}
+

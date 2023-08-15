@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="Css/styles2.css">
+    <style>
+        body {
+            background-image: url('Imagenes/1e.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            margin: 0; /* Elimina el margen predeterminado */
+            padding: 0; /* Elimina el relleno predeterminado */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="Menu_Principal.html" class="back-button">Regresar al Inicio</a>
+    <h1>Registrarse</h1>
+    <form id="registro-form">
+        <label for="usuario">Nombre de Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+        <button type="submit">Registrarse</button>
+    </form>
+    
+    <!-- Div para mostrar los datos registrados -->
+    <div id="datos-registrados">
+        <h2>Datos Registrados:</h2>
+        <p>Nombre de Usuario: <span id="mostrar-usuario"></span></p>
+        <p>Contraseña: <span id="mostrar-contrasena"></span></p>
+    </div>
+    
+    <script src="Src/script.js"></script>
+    <script src="Src/registro.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Monitoreo de Estado de Salud</title>
+    <link rel="stylesheet" href="Css/styles7.css">
+    <style>
+        body {
+            background-image: url('Imagenes/1e.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            margin: 0; /* Elimina el margen predeterminado */
+            padding: 0; /* Elimina el relleno predeterminado */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="Menu_Principal.html" class="back-button">Regresar al Inicio</a>
+    <h1>Monitoreo de Estado de Salud</h1>
+    <div id="signos-vitales">
+        <!-- Aquí se mostrarán los signos vitales registrados -->
+        <p>Presión arterial: 120/80</p>
+        <p>Pulso: 75 BPM</p>
+        <p>Temperatura: 36.5 °C</p>
+    </div>
+    <form id="monitoreo-form">
+        <h2>Registrar Signos Vitales</h2>
+        <label for="presion">Presión arterial:</label>
+        <input type="text" id="presion" required>
+        <label for="pulso">Pulso:</label>
+        <input type="text" id="pulso" required>
+        <label for="temperatura">Temperatura:</label>
+        <input type="text" id="temperatura" required>
+        <button type="submit">Registrar Signos Vitales</button>
+    </form>
+
+    <script src="Src/script.js"></script>
+    <script src="Src/monitoreo.js"></script>
+</body>
+</html>
+

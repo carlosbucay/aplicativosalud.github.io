@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Control de Medicamentos</title>
+    <link rel="stylesheet" href="Css/styles3.css">
+    <style>
+        body {
+            background-image: url('Imagenes/1e.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            margin: 0; /* Elimina el margen predeterminado */
+            padding: 0; /* Elimina el relleno predeterminado */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="Menu_Principal.html" class="back-button">Regresar al Inicio</a>
+    <h1>Control de Medicamentos</h1>
+    <ul id="medicamentos-list">
+        <!-- Aquí se listarán los medicamentos registrados -->
+        <li>Medicamento 1</li>
+        <li>Medicamento 2</li>
+    </ul>
+    <form id="medicamento-form">
+        <h2>Agregar Medicamento</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+        <label for="dosis">Dosis:</label>
+        <input type="text" id="dosis" required>
+        <label for="horario">Horario:</label>
+        <input type="text" id="horario" required>
+        <button type="submit">Agregar Medicamento</button>
+    </form>
+
+    <!-- Agrega el código JavaScript aquí -->
+    <script src="Src/script.js"></script>
+    <script src="Src/medicamentos.js"></script>
+</body>
+</html>
+

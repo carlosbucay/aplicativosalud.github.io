@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos del menú hamburguesa */
+nav {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* Imágenes para los botones */
+.menu-item.inicio {
+    background-image: url('ruta_de_la_imagen/inicio.png');
+}
+
+.menu-item.medicamentos {
+    background-image: url('ruta_de_la_imagen/medicamentos.png');
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+iframe{
+    max-width: 100%;
+    height: auto;
+}
+/* Agrega más estilos para el resto de los botones aquí */
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #f0f0f0;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #007bff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Estilos para botones en dispositivos móviles */
+    .menu a {
+        padding: 10px;
+        background-size: 20px;
+    }
+
+    /* Estilos adicionales para el contenido principal */
+    main {
+        padding: 10px;
+    }
+}
+
+/* Estilos para los botones principales en el contenido principal */
+.main-button {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    max-width: 300px;
+}
+
+.main-button:hover {
+    background-color: #0056b3;
+}
+
+.main-button.medicamentos {
+    background-image: url('ruta_de_la_imagen/medicamentos.png');
+}
+
+/* Agrega más estilos para el resto de los botones principales aquí */
+

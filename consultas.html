@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="Css/styles5.css">
+    <style>
+        body {
+            background-image: url('Imagenes/1e.jpg'); /* Ruta de la imagen de fondo */
+            background-size: auto; /* Ajusta el tamaño según el tamaño de la imagen */
+            background-position: center; /* Centra la imagen en la página */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            margin: 0; /* Elimina el margen predeterminado */
+            padding: 0; /* Elimina el relleno predeterminado */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="Menu_Principal.html" class="back-button">Regresar al Inicio</a>
+    <h1>Consultas</h1>
+    <ul id="consultas-list">
+        <!-- Aquí se listarán las consultas registradas -->
+    </ul>
+    <form id="consulta-form">
+        <h2>Agregar Consulta</h2>
+        <label for="fecha">Fecha de Consulta:</label>
+        <input type="date" id="fecha" required>
+        <label for="medico">Médico:</label>
+        <input type="text" id="medico" required>
+        <label for="notas">Notas:</label>
+        <textarea id="notas" rows="4" required></textarea>
+        <button type="submit">Agregar Consulta</button>
+    </form>
+    
+    <!-- Div para mostrar las consultas registradas -->
+    <div id="consultas-registradas">
+        <h2>Consultas Registradas:</h2>
+        <ul id="lista-consultas"></ul>
+    </div>
+
+    <div class="button-container">
+        <a href="https://mresparza1.wordpress.com" class="website-button">Info Diabetes</a>
+    </div>
+
+    <script src="Src/script.js"></script>
+    <script src="Src/consultas.js"></script>
+</body>
+</html>
+
+

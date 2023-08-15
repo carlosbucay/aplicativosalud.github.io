@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Información de Emergencia</title>
+    <link rel="stylesheet" href="Css/styles8.css">
+    <style>
+        body {
+            background-image: url('Imagenes/1e.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            margin: 0; /* Elimina el margen predeterminado */
+            padding: 0; /* Elimina el relleno predeterminado */
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="Menu_Principal.html" class="back-button">Regresar al Inicio</a>
+    <h1>Información de Emergencia</h1>
+    <form id="emergencia-form">
+        <label for="contacto">Contacto de Emergencia:</label>
+        <input type="text" id="contacto" required>
+        <label for="telefono">Teléfono de Emergencia:</label>
+        <input type="text" id="telefono" required>
+        <label for="alergias">Alergias:</label>
+        <textarea id="alergias" rows="4" required></textarea>
+        <button type="submit">Guardar Información de Emergencia</button>
+    </form>
+    
+    <!-- Div para mostrar la información de emergencia guardada -->
+    <div id="info-emergencia-guardada">
+        <h2>Información de Emergencia Guardada:</h2>
+        <p><span class="label">Contacto de Emergencia:</span> <span id="mostrar-contacto"></span></p>
+        <p><span class="label">Teléfono de Emergencia:</span> <span id="mostrar-telefono"></span></p>
+        <p><span class="label">Alergias:</span> <span id="mostrar-alergias"></span></p>
+    </div>
+
+    <script src="Src/script.js"></script>
+    <script src="Src/informacion-emergencia.js"></script>
+</body>
+</html>
+
